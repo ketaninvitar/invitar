@@ -1,0 +1,32 @@
+default: &default
+  adapter: mysql
+  encoding: utf8
+  reconnect: false
+  pool: 5
+  username: root
+  password: root
+  socket: /var/run/mysqld/mysqld.sock
+
+
+development:
+  adapter: mysql
+  encoding: utf8
+  reconnect: false
+  pool: 5
+  username: root
+  password: root
+  database: dev_new_invitar
+
+test:
+  <<: *default
+  database: new_invitar_test
+
+production:
+  adapter: mysql
+  encoding: utf8
+  reconnect: false
+  pool: 5
+  username: root
+  password: root
+  database: invitar_production
+ 
