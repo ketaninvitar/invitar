@@ -4,7 +4,7 @@ default: &default
   reconnect: false
   pool: 5
   username: root
-  password: root
+  password: stein
   socket: /var/run/mysqld/mysqld.sock
 
 
@@ -19,7 +19,7 @@ development:
 
 test:
   <<: *default
-  database: new_invitar_test
+  database: invitar_test
 
 production:
   adapter: mysql
@@ -27,6 +27,6 @@ production:
   reconnect: false
   pool: 5
   username: root
-  password: root
+  password: stein
   database: invitar_production
  
