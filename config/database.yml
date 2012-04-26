@@ -15,7 +15,7 @@ development:
   pool: 5
   username: root
   password: root
-  database: invitar_development
+  database: invitar_production
 
 test:
   <<: *default
